@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="inspectionServer">
+    <output-path>$PROJECT_DIR$/out/artifacts/inspectionServer</output-path>
+    <root id="archive" name="inspectionServer.war">
+      <element id="javaee-facet-resources" facet="inspectionServer/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="inspectionServer" />
+          <element id="jpa-descriptors" facet="inspectionServer/jpa/JPA" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: antlr:antlr:2.7.7" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.2.3" />
+          <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.5.9" />
+          <element id="library" level="project" name="Maven: org.postgresql:postgresql:42.2.10" />
+          <element id="library" level="project" name="JAX-RS-2.1.1" />
+          <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.8.9" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
