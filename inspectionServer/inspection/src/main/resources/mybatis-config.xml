@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+  <environments default="development">
+    <environment id="development">
+      <transactionManager type="JDBC"/>
+      <dataSource type="POOLED">
+        <property name="driver" value="org.postgresql.Driver"/>
+        <property name="url" value="jdbc:postgresql://127.0.0.1:5432/cogdb"/>
+        <property name="username" value="sylvia"/>
+        <property name="password" value="c0d3"/>
+      </dataSource>
+    </environment>
+  </environments>
+  <mappers>
+    <!--    <mapper resource="mapper/OccInspectionMapper.xml"/>-->
+    <package name="mapper"/>
+  </mappers>
+
+</configuration>

@@ -6,13 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="inspectionServer" />
+        <module name="inspection" />
       </profile>
     </annotationProcessing>
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="inspectionServer" options="" />
-    </option>
+    <bytecodeTargetLevel>
+      <module name="inspection" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
