@@ -13,7 +13,7 @@ import model.Login;
 import model.ResponseMsg;
 import service.LoginService;
 
-@Path("/login")
+@Path("/user")
 public class LoginController {
 
   @Context
@@ -25,6 +25,7 @@ public class LoginController {
   private LoginService loginService = new LoginService();
 
   @POST
+  @Path("/login")
   @Produces("application/json")
   public String login() throws IOException {
     StringBuilder sb = new StringBuilder();

@@ -5,8 +5,8 @@ import java.time.OffsetDateTime;
 
 public class MuniLogin {
 
-  private int muni_municode;
-  private int userid;
+  private Integer muni_municode;
+  private Integer userid;
   private boolean defaultmuni;
   private OffsetDateTime accessgranteddatestart;
   private OffsetDateTime accessgranteddatestop;
@@ -18,35 +18,35 @@ public class MuniLogin {
   private OffsetDateTime sysadminstopdate;
   private OffsetDateTime supportstartdate;
   private OffsetDateTime supportstopdate;
-  private int codeofficerassignmentorder;
-  private int staffassignmentorder;
-  private int sysadminassignmentorder;
-  private int supportassignmentorder;
-  private int bypasscodeofficerassignmentorder;
-  private int bypassstaffassignmentorder;
-  private int bypasssysadminassignmentorder;
-  private int bypasssupportassignmentorder;
+  private Integer codeofficerassignmentorder;
+  private Integer staffassignmentorder;
+  private Integer sysadminassignmentorder;
+  private Integer supportassignmentorder;
+  private Integer bypasscodeofficerassignmentorder;
+  private Integer bypassstaffassignmentorder;
+  private Integer bypasssysadminassignmentorder;
+  private Integer bypasssupportassignmentorder;
   private OffsetDateTime recorddeactivatedts;
   private String userrole;
-  private int muniloginrecordid;
+  private Integer muniloginrecordid;
   private OffsetDateTime recordcreatedts;
   private String badgenumber;
   private String orinumber;
-  private int defaultcecase_caseid;
+  private Integer defaultcecase_caseid;
 
-  public int getMuni_municode() {
+  public Integer getMuni_municode() {
     return muni_municode;
   }
 
-  public void setMuni_municode(int muni_municode) {
+  public void setMuni_municode(Integer muni_municode) {
     this.muni_municode = muni_municode;
   }
 
-  public int getUserid() {
+  public Integer getUserid() {
     return userid;
   }
 
-  public void setUserid(int userid) {
+  public void setUserid(Integer userid) {
     this.userid = userid;
   }
 
@@ -138,67 +138,67 @@ public class MuniLogin {
     this.supportstopdate = supportstopdate;
   }
 
-  public int getCodeofficerassignmentorder() {
+  public Integer getCodeofficerassignmentorder() {
     return codeofficerassignmentorder;
   }
 
-  public void setCodeofficerassignmentorder(int codeofficerassignmentorder) {
+  public void setCodeofficerassignmentorder(Integer codeofficerassignmentorder) {
     this.codeofficerassignmentorder = codeofficerassignmentorder;
   }
 
-  public int getStaffassignmentorder() {
+  public Integer getStaffassignmentorder() {
     return staffassignmentorder;
   }
 
-  public void setStaffassignmentorder(int staffassignmentorder) {
+  public void setStaffassignmentorder(Integer staffassignmentorder) {
     this.staffassignmentorder = staffassignmentorder;
   }
 
-  public int getSysadminassignmentorder() {
+  public Integer getSysadminassignmentorder() {
     return sysadminassignmentorder;
   }
 
-  public void setSysadminassignmentorder(int sysadminassignmentorder) {
+  public void setSysadminassignmentorder(Integer sysadminassignmentorder) {
     this.sysadminassignmentorder = sysadminassignmentorder;
   }
 
-  public int getSupportassignmentorder() {
+  public Integer getSupportassignmentorder() {
     return supportassignmentorder;
   }
 
-  public void setSupportassignmentorder(int supportassignmentorder) {
+  public void setSupportassignmentorder(Integer supportassignmentorder) {
     this.supportassignmentorder = supportassignmentorder;
   }
 
-  public int getBypasscodeofficerassignmentorder() {
+  public Integer getBypasscodeofficerassignmentorder() {
     return bypasscodeofficerassignmentorder;
   }
 
-  public void setBypasscodeofficerassignmentorder(int bypasscodeofficerassignmentorder) {
+  public void setBypasscodeofficerassignmentorder(Integer bypasscodeofficerassignmentorder) {
     this.bypasscodeofficerassignmentorder = bypasscodeofficerassignmentorder;
   }
 
-  public int getBypassstaffassignmentorder() {
+  public Integer getBypassstaffassignmentorder() {
     return bypassstaffassignmentorder;
   }
 
-  public void setBypassstaffassignmentorder(int bypassstaffassignmentorder) {
+  public void setBypassstaffassignmentorder(Integer bypassstaffassignmentorder) {
     this.bypassstaffassignmentorder = bypassstaffassignmentorder;
   }
 
-  public int getBypasssysadminassignmentorder() {
+  public Integer getBypasssysadminassignmentorder() {
     return bypasssysadminassignmentorder;
   }
 
-  public void setBypasssysadminassignmentorder(int bypasssysadminassignmentorder) {
+  public void setBypasssysadminassignmentorder(Integer bypasssysadminassignmentorder) {
     this.bypasssysadminassignmentorder = bypasssysadminassignmentorder;
   }
 
-  public int getBypasssupportassignmentorder() {
+  public Integer getBypasssupportassignmentorder() {
     return bypasssupportassignmentorder;
   }
 
-  public void setBypasssupportassignmentorder(int bypasssupportassignmentorder) {
+  public void setBypasssupportassignmentorder(Integer bypasssupportassignmentorder) {
     this.bypasssupportassignmentorder = bypasssupportassignmentorder;
   }
 
@@ -218,11 +218,11 @@ public class MuniLogin {
     this.userrole = userrole;
   }
 
-  public int getMuniloginrecordid() {
+  public Integer getMuniloginrecordid() {
     return muniloginrecordid;
   }
 
-  public void setMuniloginrecordid(int muniloginrecordid) {
+  public void setMuniloginrecordid(Integer muniloginrecordid) {
     this.muniloginrecordid = muniloginrecordid;
   }
 
@@ -250,11 +250,11 @@ public class MuniLogin {
     this.orinumber = orinumber;
   }
 
-  public int getDefaultcecase_caseid() {
+  public Integer getDefaultcecase_caseid() {
     return defaultcecase_caseid;
   }
 
-  public void setDefaultcecase_caseid(int defaultcecase_caseid) {
+  public void setDefaultcecase_caseid(Integer defaultcecase_caseid) {
     this.defaultcecase_caseid = defaultcecase_caseid;
   }
 

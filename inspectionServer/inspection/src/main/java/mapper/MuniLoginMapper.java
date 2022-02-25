@@ -8,5 +8,7 @@ public interface MuniLoginMapper {
 
   List<MuniLogin> selectAll();
 
-  MuniLogin selectByUserId(@Param("userid") int userid, @Param("muni_municode") int muni_municode);
+  MuniLogin selectByUserIdAndMuniCode(@Param("userid") int userid, @Param("muni_municode") int muni_municode);
+
+  List<MuniLogin> selectByUserId(@Param("userid") int userid);
 }

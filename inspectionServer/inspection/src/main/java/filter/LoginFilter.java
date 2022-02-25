@@ -19,6 +19,7 @@ import model.ResponseMsg;
 @WebFilter("*")
 public class LoginFilter implements Filter {
 
+
   @Override
   public void init(FilterConfig filterConfig) throws ServletException {
     Filter.super.init(filterConfig);
@@ -30,32 +31,58 @@ public class LoginFilter implements Filter {
     HttpServletRequest request = (HttpServletRequest) servletRequest;
     HttpServletResponse response = (HttpServletResponse) servletResponse;
     String method = request.getMethod();
+    HttpSession session = request.getSession();
 
-    if (!request.getRequestURI().contains("/login") && !request.getRequestURI()
-        .contains("/munilogin")) {
-      HttpSession session = request.getSession();
-      if (session.getAttribute("userId") == null) {
-        PrintWriter writer = response.getWriter();
-        response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-        writer.print(new Gson().toJson(new ResponseMsg("login fail, userid is invalid")));
-        writer.flush();
-      } else if (session.getAttribute("muni_municode") == null) {
-        PrintWriter writer = response.getWriter();
-        response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-        writer.print(new Gson().toJson(new ResponseMsg("login fail, muniid is invalid")));
-        writer.flush();
-      } else {
+    String userLoginURI = request.getContextPath() + "/api/user/login";
+    String muniLoginURI = request.getContextPath() + "/api/muni/login";
+
+    if (request.getRequestURI().equals(userLoginURI)) {
+      if (method.equalsIgnoreCase("POST")) {
         filterChain.doFilter(servletRequest, servletResponse);
+      } else {
+        PrintWriter writer = response.getWriter();
+        response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+        writer.print(new Gson().toJson(new ResponseMsg("user login fail")));
+        writer.flush();
       }
       return;
     }
 
-    if (!method.equalsIgnoreCase("POST")) {
-      response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-      response.getWriter().print(new Gson().toJson(new ResponseMsg("login fail, method is invalid")));
+    if (request.getRequestURI().contains(muniLoginURI)) {
+      if (session.getAttribute("userId") == null) {
+        PrintWriter writer = response.getWriter();
+        response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+        writer.print(new Gson().toJson(new ResponseMsg("user login fail")));
+        writer.flush();
+      } else if (method.equalsIgnoreCase("POST")) {
+        filterChain.doFilter(servletRequest, servletResponse);
+      } else if (method.equalsIgnoreCase("GET")) {
+        filterChain.doFilter(servletRequest, servletResponse);
+      } else {
+        PrintWriter writer = response.getWriter();
+        response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+        writer.print(new Gson().toJson(new ResponseMsg("muni login fail")));
+        writer.flush();
+      }
       return;
     }
-    System.out.println("success");
+
+    if (session.getAttribute("userId") == null) {
+      PrintWriter writer = response.getWriter();
+      response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+      writer.print(new Gson().toJson(new ResponseMsg("user login fail")));
+      writer.flush();
+      return;
+    }
+
+    if (session.getAttribute("muni_municode") == null) {
+      PrintWriter writer = response.getWriter();
+      response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+      writer.print(new Gson().toJson(new ResponseMsg("muni login fail")));
+      writer.flush();
+      return;
+    }
+
     filterChain.doFilter(servletRequest, servletResponse);
   }
 

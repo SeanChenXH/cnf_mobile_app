@@ -4,27 +4,27 @@ import java.time.OffsetDateTime;
 
 public class Login {
 
-  private int userid;
+  private Integer userid;
   private String username;
   private String password;
   private String notes;
-  private int personlink;
+  private Integer personlink;
   private OffsetDateTime pswdlastupdated;
   private OffsetDateTime forcepasswordreset;
-  private int createdby;
+  private Integer createdby;
   private OffsetDateTime createdts;
   private boolean nologinvirtualonly;
   private OffsetDateTime deactivatedts;
-  private int deactivated_userid;
+  private Integer deactivated_userid;
   private OffsetDateTime lastupdatedts;
   private String userrole;
-  private int homemuni;
+  private Integer homemuni;
 
-  public int getUserid() {
+  public Integer getUserid() {
     return userid;
   }
 
-  public void setUserid(int userid) {
+  public void setUserid(Integer userid) {
     this.userid = userid;
   }
 
@@ -52,11 +52,11 @@ public class Login {
     this.notes = notes;
   }
 
-  public int getPersonlink() {
+  public Integer getPersonlink() {
     return personlink;
   }
 
-  public void setPersonlink(int personlink) {
+  public void setPersonlink(Integer personlink) {
     this.personlink = personlink;
   }
 
@@ -76,11 +76,11 @@ public class Login {
     this.forcepasswordreset = forcepasswordreset;
   }
 
-  public int getCreatedby() {
+  public Integer getCreatedby() {
     return createdby;
   }
 
-  public void setCreatedby(int createdby) {
+  public void setCreatedby(Integer createdby) {
     this.createdby = createdby;
   }
 
@@ -108,11 +108,11 @@ public class Login {
     this.deactivatedts = deactivatedts;
   }
 
-  public int getDeactivated_userid() {
+  public Integer getDeactivated_userid() {
     return deactivated_userid;
   }
 
-  public void setDeactivated_userid(int deactivated_userid) {
+  public void setDeactivated_userid(Integer deactivated_userid) {
     this.deactivated_userid = deactivated_userid;
   }
 
@@ -132,11 +132,11 @@ public class Login {
     this.userrole = userrole;
   }
 
-  public int getHomemuni() {
+  public Integer getHomemuni() {
     return homemuni;
   }
 
-  public void setHomemuni(int homemuni) {
+  public void setHomemuni(Integer homemuni) {
     this.homemuni = homemuni;
   }
 

@@ -8,10 +8,15 @@
     select *
     from munilogin;
   </select>
-  <select id="selectByUserId" resultType="model.MuniLogin">
+  <select id="selectByUserIdAndMuniCode" resultType="model.MuniLogin">
     select *
     from munilogin
     where userid = #{userid}
       and muni_municode = #{muni_municode};
+  </select>
+  <select id="selectByUserId" resultType="model.MuniLogin">
+    select *
+    from munilogin
+    where userid = #{userid};
   </select>
 </mapper>
