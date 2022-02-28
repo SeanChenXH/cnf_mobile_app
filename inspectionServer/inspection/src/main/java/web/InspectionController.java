@@ -32,4 +32,5 @@ public class InspectionController {
     System.out.println(inspections);
     return new Gson().toJson(inspections);
   }
+
 }
