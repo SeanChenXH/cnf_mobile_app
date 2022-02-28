@@ -1437,54 +1437,39 @@ false posixrules
       <ObjectId>24252</ObjectId>
       <OwnerName>sylvia</OwnerName>
     </database>
-    <database id="3" parent="1" name="cogdb_old">
-      <ObjectId>19995</ObjectId>
-      <OwnerName>sylvia</OwnerName>
-    </database>
-    <database id="4" parent="1" name="postgres">
+    <database id="3" parent="1" name="postgres">
       <Comment>default administrative connection database</Comment>
       <ObjectId>13053</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
-    <database id="5" parent="1" name="studytrack">
+    <database id="4" parent="1" name="cogdb_old">
+      <ObjectId>19995</ObjectId>
+      <OwnerName>sylvia</OwnerName>
+    </database>
+    <database id="5" parent="1" name="xworkdb">
+      <ObjectId>23668</ObjectId>
+      <OwnerName>sylvia</OwnerName>
+    </database>
+    <database id="6" parent="1" name="studytrack">
       <ObjectId>23670</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
-    <database id="6" parent="1" name="tech">
+    <database id="7" parent="1" name="tech">
       <ObjectId>23744</ObjectId>
       <OwnerName>sylvia</OwnerName>
-    </database>
-    <database id="7" parent="1" name="test">
-      <ObjectId>24251</ObjectId>
-      <OwnerName>xhchen</OwnerName>
     </database>
     <database id="8" parent="1" name="xdesign">
       <ObjectId>24198</ObjectId>
       <OwnerName>sylvia</OwnerName>
     </database>
-    <database id="9" parent="1" name="xworkdb">
-      <ObjectId>23668</ObjectId>
-      <OwnerName>sylvia</OwnerName>
+    <database id="9" parent="1" name="test">
+      <ObjectId>24251</ObjectId>
+      <OwnerName>xhchen</OwnerName>
     </database>
-    <role id="10" parent="1" name="pg_monitor">
-      <ObjectId>3373</ObjectId>
-      <RoleGrants>3374
-3375
-3377</RoleGrants>
-    </role>
-    <role id="11" parent="1" name="pg_read_all_settings">
-      <ObjectId>3374</ObjectId>
-    </role>
-    <role id="12" parent="1" name="pg_read_all_stats">
-      <ObjectId>3375</ObjectId>
-    </role>
-    <role id="13" parent="1" name="pg_signal_backend">
+    <role id="10" parent="1" name="pg_signal_backend">
       <ObjectId>4200</ObjectId>
     </role>
-    <role id="14" parent="1" name="pg_stat_scan_tables">
-      <ObjectId>3377</ObjectId>
-    </role>
-    <role id="15" parent="1" name="postgres">
+    <role id="11" parent="1" name="postgres">
       <BypassRls>1</BypassRls>
       <CanLogin>1</CanLogin>
       <CreateDb>1</CreateDb>
@@ -1493,21 +1478,36 @@ false posixrules
       <Replication>1</Replication>
       <SuperRole>1</SuperRole>
     </role>
-    <role id="16" parent="1" name="sean">
-      <CanLogin>1</CanLogin>
-      <ObjectId>24249</ObjectId>
-    </role>
-    <role id="17" parent="1" name="sylvia">
+    <role id="12" parent="1" name="sylvia">
       <CanLogin>1</CanLogin>
       <ObjectId>19962</ObjectId>
     </role>
-    <role id="18" parent="1" name="xhchen">
+    <role id="13" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+    </role>
+    <role id="14" parent="1" name="xhchen">
       <CanLogin>1</CanLogin>
       <ObjectId>24250</ObjectId>
     </role>
-    <role id="19" parent="1" name="xiaohong">
+    <role id="15" parent="1" name="sean">
+      <CanLogin>1</CanLogin>
+      <ObjectId>24249</ObjectId>
+    </role>
+    <role id="16" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+      <RoleGrants>3374
+3375
+3377</RoleGrants>
+    </role>
+    <role id="17" parent="1" name="xiaohong">
       <CanLogin>1</CanLogin>
       <ObjectId>16384</ObjectId>
+    </role>
+    <role id="18" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+    </role>
+    <role id="19" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
     </role>
     <tablespace id="20" parent="1" name="pg_default">
       <ObjectId>1663</ObjectId>

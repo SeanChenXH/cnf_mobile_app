@@ -20,4 +20,13 @@
     from occinspection
     where inspector_userid = #{userId};
   </select>
+
+  <select id="selectAllByUserIdAndMuni" resultType="model.OccInspection">
+    select *
+    from occinspection
+           join occinspectiondispatch o on occinspection.inspectionid = o.inspection_inspectionid
+    where o.retrievedby_userid = #{userid}
+      and o.municipality_municode = #{muni_municode};
+  </select>
+
 </mapper>

@@ -10,9 +10,10 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Context;
 import model.Login;
+import model.ResponseMsg;
 import service.LoginService;
 
-@Path("/login")
+@Path("/user")
 public class LoginController {
 
   @Context
@@ -24,6 +25,7 @@ public class LoginController {
   private LoginService loginService = new LoginService();
 
   @POST
+  @Path("/login")
   @Produces("application/json")
   public String login() throws IOException {
     StringBuilder sb = new StringBuilder();
@@ -35,24 +37,13 @@ public class LoginController {
     login = loginService.login(login.getUsername(), login.getPassword());
     if (login != null) {
       request.getSession().setAttribute("userId", login.getUserid());
-      return "success";
+      response.setStatus(HttpServletResponse.SC_CREATED);
+      return new Gson().toJson(new ResponseMsg("user login success"));
     }
-    return "fail";
+    response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+    return new Gson().toJson(new ResponseMsg("user login fail"));
   }
 
-  @GET
-  @Path(("/test"))
-  @Produces("application/json")
-  public String test(){
-    System.out.println(request.getSession().getAttribute("userId"));
-    return "good";
-  }
 
-  @POST
-  @Path(("/fail"))
-  @Produces("application/json")
-  public String fail(){
-    System.out.println(request.getSession().getAttribute("userId"));
-    return "login fail";
-  }
+
 }

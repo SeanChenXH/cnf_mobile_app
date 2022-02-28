@@ -5,65 +5,65 @@ import java.time.OffsetDateTime;
 
 public class OccInspection {
 
-  private int inspectionId;
-  private int occperiod_periodid;
-  private int inspector_userid;
-  private int publicaccesscc;
+  private Integer inspectionId;
+  private Integer occperiod_periodid;
+  private Integer inspector_userid;
+  private Integer publicaccesscc;
   private boolean enablepacc;
   private String notespreinspection;
-  private int thirdpartyinspector_personid;
+  private Integer thirdpartyinspector_personid;
   private LocalDateTime thirdpartyinspectorapprovalts;
-  private int thirdpartyinspectorapprovalby;
-  private int maxoccupantsallowed;
-  private int numbedrooms;
-  private int numbathrooms;
-  private int occchecklist_checklistlistid;
+  private Integer thirdpartyinspectorapprovalby;
+  private Integer maxoccupantsallowed;
+  private Integer numbedrooms;
+  private Integer numbathrooms;
+  private Integer occchecklist_checklistlistid;
   private OffsetDateTime effectivedate;
   private OffsetDateTime createdts;
-  private int followupto_inspectionid;
+  private Integer followupto_inspectionid;
   private LocalDateTime timestart;
   private LocalDateTime timeend;
-  private int determination_detid;
-  private int determinationby_userid;
+  private Integer determination_detid;
+  private Integer determinationby_userid;
   private LocalDateTime determinationts;
   private String remarks;
   private String generalcomments;
   private LocalDateTime deactivatedts;
-  private int deactivatedby_userid;
-  private int createdby_userid;
+  private Integer deactivatedby_userid;
+  private Integer createdby_userid;
   private LocalDateTime lastupdatedts;
-  private int lastupdatedby_userid;
-  private int cause_causeid;
+  private Integer lastupdatedby_userid;
+  private Integer cause_causeid;
 
-  public int getInspectionId() {
+  public Integer getInspectionId() {
     return inspectionId;
   }
 
-  public void setInspectionId(int inspectionId) {
+  public void setInspectionId(Integer inspectionId) {
     this.inspectionId = inspectionId;
   }
 
-  public int getOccperiod_periodid() {
+  public Integer getOccperiod_periodid() {
     return occperiod_periodid;
   }
 
-  public void setOccperiod_periodid(int occperiod_periodid) {
+  public void setOccperiod_periodid(Integer occperiod_periodid) {
     this.occperiod_periodid = occperiod_periodid;
   }
 
-  public int getInspector_userid() {
+  public Integer getInspector_userid() {
     return inspector_userid;
   }
 
-  public void setInspector_userid(int inspector_userid) {
+  public void setInspector_userid(Integer inspector_userid) {
     this.inspector_userid = inspector_userid;
   }
 
-  public int getPublicaccesscc() {
+  public Integer getPublicaccesscc() {
     return publicaccesscc;
   }
 
-  public void setPublicaccesscc(int publicaccesscc) {
+  public void setPublicaccesscc(Integer publicaccesscc) {
     this.publicaccesscc = publicaccesscc;
   }
 
@@ -83,11 +83,11 @@ public class OccInspection {
     this.notespreinspection = notespreinspection;
   }
 
-  public int getThirdpartyinspector_personid() {
+  public Integer getThirdpartyinspector_personid() {
     return thirdpartyinspector_personid;
   }
 
-  public void setThirdpartyinspector_personid(int thirdpartyinspector_personid) {
+  public void setThirdpartyinspector_personid(Integer thirdpartyinspector_personid) {
     this.thirdpartyinspector_personid = thirdpartyinspector_personid;
   }
 
@@ -99,43 +99,43 @@ public class OccInspection {
     this.thirdpartyinspectorapprovalts = thirdpartyinspectorapprovalts;
   }
 
-  public int getThirdpartyinspectorapprovalby() {
+  public Integer getThirdpartyinspectorapprovalby() {
     return thirdpartyinspectorapprovalby;
   }
 
-  public void setThirdpartyinspectorapprovalby(int thirdpartyinspectorapprovalby) {
+  public void setThirdpartyinspectorapprovalby(Integer thirdpartyinspectorapprovalby) {
     this.thirdpartyinspectorapprovalby = thirdpartyinspectorapprovalby;
   }
 
-  public int getMaxoccupantsallowed() {
+  public Integer getMaxoccupantsallowed() {
     return maxoccupantsallowed;
   }
 
-  public void setMaxoccupantsallowed(int maxoccupantsallowed) {
+  public void setMaxoccupantsallowed(Integer maxoccupantsallowed) {
     this.maxoccupantsallowed = maxoccupantsallowed;
   }
 
-  public int getNumbedrooms() {
+  public Integer getNumbedrooms() {
     return numbedrooms;
   }
 
-  public void setNumbedrooms(int numbedrooms) {
+  public void setNumbedrooms(Integer numbedrooms) {
     this.numbedrooms = numbedrooms;
   }
 
-  public int getNumbathrooms() {
+  public Integer getNumbathrooms() {
     return numbathrooms;
   }
 
-  public void setNumbathrooms(int numbathrooms) {
+  public void setNumbathrooms(Integer numbathrooms) {
     this.numbathrooms = numbathrooms;
   }
 
-  public int getOccchecklist_checklistlistid() {
+  public Integer getOccchecklist_checklistlistid() {
     return occchecklist_checklistlistid;
   }
 
-  public void setOccchecklist_checklistlistid(int occchecklist_checklistlistid) {
+  public void setOccchecklist_checklistlistid(Integer occchecklist_checklistlistid) {
     this.occchecklist_checklistlistid = occchecklist_checklistlistid;
   }
 
@@ -155,11 +155,11 @@ public class OccInspection {
     this.createdts = createdts;
   }
 
-  public int getFollowupto_inspectionid() {
+  public Integer getFollowupto_inspectionid() {
     return followupto_inspectionid;
   }
 
-  public void setFollowupto_inspectionid(int followupto_inspectionid) {
+  public void setFollowupto_inspectionid(Integer followupto_inspectionid) {
     this.followupto_inspectionid = followupto_inspectionid;
   }
 
@@ -179,19 +179,19 @@ public class OccInspection {
     this.timeend = timeend;
   }
 
-  public int getDetermination_detid() {
+  public Integer getDetermination_detid() {
     return determination_detid;
   }
 
-  public void setDetermination_detid(int determination_detid) {
+  public void setDetermination_detid(Integer determination_detid) {
     this.determination_detid = determination_detid;
   }
 
-  public int getDeterminationby_userid() {
+  public Integer getDeterminationby_userid() {
     return determinationby_userid;
   }
 
-  public void setDeterminationby_userid(int determinationby_userid) {
+  public void setDeterminationby_userid(Integer determinationby_userid) {
     this.determinationby_userid = determinationby_userid;
   }
 
@@ -227,19 +227,19 @@ public class OccInspection {
     this.deactivatedts = deactivatedts;
   }
 
-  public int getDeactivatedby_userid() {
+  public Integer getDeactivatedby_userid() {
     return deactivatedby_userid;
   }
 
-  public void setDeactivatedby_userid(int deactivatedby_userid) {
+  public void setDeactivatedby_userid(Integer deactivatedby_userid) {
     this.deactivatedby_userid = deactivatedby_userid;
   }
 
-  public int getCreatedby_userid() {
+  public Integer getCreatedby_userid() {
     return createdby_userid;
   }
 
-  public void setCreatedby_userid(int createdby_userid) {
+  public void setCreatedby_userid(Integer createdby_userid) {
     this.createdby_userid = createdby_userid;
   }
 
@@ -251,19 +251,19 @@ public class OccInspection {
     this.lastupdatedts = lastupdatedts;
   }
 
-  public int getLastupdatedby_userid() {
+  public Integer getLastupdatedby_userid() {
     return lastupdatedby_userid;
   }
 
-  public void setLastupdatedby_userid(int lastupdatedby_userid) {
+  public void setLastupdatedby_userid(Integer lastupdatedby_userid) {
     this.lastupdatedby_userid = lastupdatedby_userid;
   }
 
-  public int getCause_causeid() {
+  public Integer getCause_causeid() {
     return cause_causeid;
   }
 
-  public void setCause_causeid(int cause_causeid) {
+  public void setCause_causeid(Integer cause_causeid) {
     this.cause_causeid = cause_causeid;
   }
 
